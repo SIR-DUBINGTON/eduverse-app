@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- LaTeX Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Formula:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="36dp" />
+
+
+        <!-- MathView WebView (KaTeX) -->
+        <WebView
+            android:id="@+id/mathWebView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- RecyclerView Formula Selector -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/formulaRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:overScrollMode="never" />
+
+        <!-- Inputs Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter known values:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Inputs Container -->
+        <LinearLayout
+            android:id="@+id/inputFieldsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/input_container_bg"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Solve Button -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solve Equation"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <!-- Result Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp" />
+
+        <!-- Result Display -->
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>

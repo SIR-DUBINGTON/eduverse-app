@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">eduverse</string>
+    <string name="solve_equation">Solve Equation</string>
+    <string name="result_label">Result: </string>
+</resources>
