@@ -16,12 +16,18 @@ fun EduVerseBottomBar(currentRoute: String?, onTabSelected: (String) -> Unit) {
     val items = listOf(
         BottomNavItem("Home", R.drawable.ic_home, "home"),
         BottomNavItem("Solver", R.drawable.ic_calculator, "equation_solver"),
-        BottomNavItem("Classroom", R.drawable.ic_classroom, "classroom?formulaTitle=Sample&formulaTheory=Placeholder")
+        BottomNavItem("Classroom", R.drawable.ic_classroom, "nav_classroom"),
+        BottomNavItem("Problems", R.drawable.ic_problem, "problems")
     )
 
     NavigationBar {
         items.forEach { item ->
-            val isSelected = currentRoute == item.route || currentRoute?.startsWith(item.route.substringBefore("?")) == true
+            val isSelected = when (item.route) {
+                "nav_classroom" -> currentRoute?.startsWith("classroom") == true || currentRoute == "nav_classroom"
+                "problems" -> currentRoute == "problems"
+                else -> currentRoute == item.route
+            }
+
 
             NavigationBarItem(
                 selected = isSelected,
