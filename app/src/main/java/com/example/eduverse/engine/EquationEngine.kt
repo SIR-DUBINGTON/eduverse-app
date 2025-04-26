@@ -1,5 +1,12 @@
 package com.example.eduverse.engine
 
+import kotlin.math.pow
+import kotlin.math.sqrt
+
+/**
+ * `EquationEngine` is a utility object that provides functionality to solve physics equations.
+ * It supports a predefined set of equations and can solve for different variables within those equations.
+ */
 object EquationEngine {
 
     fun solve(equation: String, unknown: String, values: Map<String, Double>): Double {
@@ -12,9 +19,9 @@ object EquationEngine {
             }
 
             "KE = 0.5 * m * v^2" -> when (unknown) {
-                "KE" -> 0.5 * values.getValue("m") * Math.pow(values.getValue("v"), 2.0)
-                "m"  -> (2 * values.getValue("KE")) / Math.pow(values.getValue("v"), 2.0)
-                "v"  -> Math.sqrt((2 * values.getValue("KE")) / values.getValue("m"))
+                "KE" -> 0.5 * values.getValue("m") * values.getValue("v").pow(2.0)
+                "m"  -> (2 * values.getValue("KE")) / values.getValue("v").pow(2.0)
+                "v"  -> sqrt((2 * values.getValue("KE")) / values.getValue("m"))
                 else -> throw IllegalArgumentException("Unknown variable $unknown")
             }
 
@@ -26,10 +33,12 @@ object EquationEngine {
             }
 
             "F = G * (m1 * m2) / (r^2)" -> when (unknown) { // Gravitational Force
-                "F" -> 6.67430e-11 * (values.getValue("m1") * values.getValue("m2")) / Math.pow(values.getValue("r"), 2.0)
-                "m1" -> values.getValue("F") * Math.pow(values.getValue("r"), 2.0) / (6.67430e-11 * values.getValue("m2"))
-                "m2" -> values.getValue("F") * Math.pow(values.getValue("r"), 2.0) / (6.67430e-11 * values.getValue("m1"))
-                "r" -> Math.sqrt((6.67430e-11 * values.getValue("m1") * values.getValue("m2")) / values.getValue("F"))
+                "F" -> 6.67430e-11 * (values.getValue("m1") * values.getValue("m2")) / values.getValue(
+                    "r"
+                ).pow(2.0)
+                "m1" -> values.getValue("F") * values.getValue("r").pow(2.0) / (6.67430e-11 * values.getValue("m2"))
+                "m2" -> values.getValue("F") * values.getValue("r").pow(2.0) / (6.67430e-11 * values.getValue("m1"))
+                "r" -> sqrt((6.67430e-11 * values.getValue("m1") * values.getValue("m2")) / values.getValue("F"))
                 else -> throw IllegalArgumentException("Unknown variable $unknown")
             }
 

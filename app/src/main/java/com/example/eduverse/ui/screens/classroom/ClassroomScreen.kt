@@ -6,11 +6,17 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.eduverse.R
 import com.example.eduverse.data.FormulaProvider
-import com.example.eduverse.models.Formula
 
+/**
+ * Composable function that displays the Classroom screen.
+ *
+ * This screen allows users to search for formulas and view a list of them.
+ */
 @Composable
 fun ClassroomScreen(navController: NavController) {
     var searchQuery by remember { mutableStateOf("") }
@@ -24,13 +30,13 @@ fun ClassroomScreen(navController: NavController) {
         .fillMaxSize()
         .padding(16.dp)) {
 
-        Text("Explore Formula Theory", style = MaterialTheme.typography.headlineSmall)
+        Text(stringResource(R.string.classroom_heading_text), style = MaterialTheme.typography.headlineSmall)
         Spacer(modifier = Modifier.height(12.dp))
 
         OutlinedTextField(
             value = searchQuery,
             onValueChange = { searchQuery = it },
-            label = { Text("Search formulas") },
+            label = { Text(stringResource(R.string.search_formulas_text)) },
             modifier = Modifier.fillMaxWidth()
         )
 
@@ -52,7 +58,7 @@ fun ClassroomScreen(navController: NavController) {
                         Button(onClick = {
                             navController.navigate("classroom?formulaTitle=${formula.name}&formulaTheory=${formula.theory}")
                         }) {
-                            Text("Read Theory")
+                            Text(stringResource(R.string.read_theory_text))
                         }
                     }
                 }

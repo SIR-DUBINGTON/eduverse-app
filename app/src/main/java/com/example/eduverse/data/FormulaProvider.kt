@@ -2,6 +2,18 @@ package com.example.eduverse.data
 
 import com.example.eduverse.models.Formula
 
+/**
+ * `FormulaProvider` is a singleton object that provides a collection of physics formulas.
+ *
+ * It acts as a data source for a predefined set of formulas, each represented by a `Formula` object.
+ * Each formula includes its name, equation, a list of variables, a brief theoretical description,
+ * and its LaTeX representation for rendering.
+ *
+ * This object is designed to be used as a central repository for frequently used physics formulas
+ * within an application or system. It offers a structured and easily accessible way to manage
+ * and retrieve these formulas.
+ */
+
 object FormulaProvider {
     val formulas = listOf(
         Formula(

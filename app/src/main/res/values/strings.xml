@@ -2,4 +2,122 @@
     <string name="app_name">eduverse</string>
     <string name="solve_equation">Solve Equation</string>
     <string name="result_label">Result: </string>
+    <string name="result_correct">Correct!</string>"
+    <string name="result_incorrect">Incorrect. The correct answer is </string>
+    <string name="result_try_again">Try Again</string>"
+    <string name="result_finish">Finish</string>
+    <string name="result_restart">Restart</string>"
+    <string name="result_back_to_problems">Back to Problems</string>
+    <string name="result_score_history">View Score History</string>
+    <string name="result_test_mode">Test Mode</string>"
+    <string name="result_practice">Practice</string>
+    <string name="result_problem_of_the_day">Problem of the Day</string>
+    <string name="result_problems">Problems</string>"
+    <string name="result_test">Test</string>
+    <string name="result_practice_mode">Practice Mode</string>
+    <string name="result_test_summary">Test Summary</string>"
+    <string name="result_no_problems">No problems available.</string>"
+    <string name="result_error">Error: </string>
+    <string name="result_loading">Loading…</string>
+    <string name="result_back">Back</string>"
+
+    //Widget Text
+    <string name="problem_of_day_widget_heading">Problem of the Day</string>
+    <string name="pod_default_description">Can you solve it?</string>
+
+    //Bottom Nav Bar
+    <string name="home_text">Home</string>
+    <string name="equation_solver_text">Solver</string>
+    <string name="nav_classroom_text">Theory</string>
+    <string name="problems_text">Problem</string>
+
+    //Classroom Screens text
+    <string name="classroom_heading_text">Explore Formula Theory</string>
+    <string name="search_formulas_text">Search formulas</string>
+    <string name="read_theory_text">Read Theory</string>
+
+    //Practice Screens text
+    <string name="practice_heading_text">Practice Mode</string>"
+    <string name="solve_problem_text">Solve Problem</string>
+
+    //Practice View Model text
+    <string name="failed_to_load_problems_text">Failed to load problems: %1$s</string>
+
+    //Problem of the Day Screen text
+    <string name="problem_of_the_day_heading_text">Problem of the Day</string>
+    <string name="today_is_text">Today is </string>"
+    <string name="no_problems_text">No problems available.</string>"
+    <string name="PoD_error_text">Error: </string>""
+    <string name="difficulty_text">Difficulty: </string>"
+    <string name="solve_today_problem_text">Solve Today’s Problem</string>
+
+
+    //Problem Screens text
+    <string name="problems_heading_text">Problems</string>
+    <string name="test_mode_text">Test Mode</string>
+    <string name="practice_mode_text">Practice Mode</string>
+    <string name="problem_of_the_day_text">Problem of the Day</string>"
+    <string name="score_history_text">Test History</string>"
+
+    //Sandbox NotePad Screen text
+    <string name="sandbox_heading_text">Problem Sandbox</string>"
+    <string name="scratchpad_text">Scratchpad / Notes (not evaluated)</string>"
+    <string name="final_working_text">Final Working and Answer (evaluated)</string>"
+    <string name="live_preview_text">Live Preview</string>"
+    <string name="submit_answer_text">Submit Answer</string>"
+    <string name="try_again_text">Try Again</string>""
+    <string name="OK">OK</string>
+    <string name="sandbox_result_incorrect">Incorrect. Expected: %1$s</string>
+
+    //Test Mode Screen text
+    <string name="test_mode_heading_text">Test Mode</string>
+    <string name="test_summary_text">Test Summary</string>
+    <string name="score_text">Score: </string>
+    <string name="restart_test_text">Retake Test</string>
+    <string name="problem_of_text">Problem </string>"
+    <string name="of_text"> of </string>
+    <string name="your_answer_text">Your Answer</string>"
+    <string name="finish_text">Finish</string>
+    <string name="next_text">Next</string>
+    <string name="test_complete_text">Test Complete!</string>"
+    <string name="back_to_problems_text">Back to Problems</string>">
+    <string name="view_score_history_text">View History</string>
+
+    //Scores History Screen text
+    <string name="score_history_heading_text">Test Score History</string>
+    <string name="no_scores_text">No past scores yet.</string>"
+
+    //Equation Solver Screen text
+    <string name="select_formula_text">Select a formula:</string>
+    <string name="enter_values_text">Enter values for:</string>
+    <string name="use_formula_text">Use Formula</string>"
+    <string name="view_theory_text">View Theory</string>
+    <string name="leave_one_field_empty_text">Leave one field empty to solve for it.</string>"
+    <string name="calculate_result_text">Calculate Result</string>
+    <string name="live_formula_preview_text">Live Formula Preview:</string>""
+
+    //Home Screen text
+    <string name="go_to_equation_solver_text">Go to Equation Solver</string>"
+    <string name="welcome_text">Welcome to EduVerse</string>
+    <string name="settings_text">Settings</string>"
+
+    //Settings Screen text
+    <string name="settings_heading_text">Settings</string>
+    <string name="font_size_text">Font Size</string>
+    <string name="save_settings_text">Save Settings</string>
+    <string name="sample_text">Sample Text</string>"
+    <string name="dark_mode_text">Dark Mode</string>
+    <string name="welcome_text_subheading">Welcome</string>
+    <string name="nav_classroom">Classroom\n</string>
+    <string name="practice_text">Practice</string>
+    <string name="sandbox_text">Sandbox</string>
+    <string name="tap_to_solve_today">Tap to Solve</string>
+
+    //Home Screen
+    <string name="good_morning">Good Morning!</string>
+    <string name="good_afternoon">Good Afternoon!</string>"
+    <string name="good_evening">Good Evening!</string>
+    <string name="hello">Hello!</string>
+    <string name="good_night">Good Night!</string>"
+    <string name="good_twilight_hours">Good Twilight Hours!</string>
 </resources>
